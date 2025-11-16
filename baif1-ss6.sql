@@ -1,0 +1,15 @@
+CREATE DATABASE QuanLyThuVien;
+USE QuanLyThuVien;
+
+-- 3. Tạo bảng TacGia
+CREATE TABLE TacGia (
+    MaTacGia INT AUTO_INCREMENT PRIMARY KEY,
+    TenTacGia VARCHAR(100) NOT NULL,
+    QuocTich VARCHAR(50)
+);
+CREATE TABLE DocGia (
+    MaDocGia INT AUTO_INCREMENT PRIMARY KEY,
+    TenDocGia VARCHAR(100) NOT NULL,
+    DiaChi VARCHAR(255),
+    SoDienThoai VARCHAR(15) UNIQUE
+);
