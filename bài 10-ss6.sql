@@ -1,0 +1,8 @@
+SELECT *
+FROM PhieuMuon
+WHERE MaDocGia = 1
+  AND NgayTra IS NULL;
+DELETE FROM PhieuMuon
+WHERE MaDocGia = 1;
+DELETE FROM DocGia
+WHERE MaDocGia = 1;
